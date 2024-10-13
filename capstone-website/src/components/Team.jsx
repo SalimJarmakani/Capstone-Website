@@ -1,22 +1,22 @@
 import React from "react";
-import { Grid2 } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 
 import GroupMember from "./GroupMember";
 
 const Team = ({ people }) => {
   return (
-    <Grid2 container spacing={5}>
+    <Grid container spacing={4} padding="0">
       {people.map((person, index) => (
-        <Grid2 item xs={12} sm={6} md={4} key={index}>
+        <Grid xs={12} sm={6} md={4} key={index} alignContent="center">
           <GroupMember
             name={person.name}
             role={person.role}
             imageUrl={person.imageUrl}
             linkedInUrl={person.linkedInUrl}
           />
-        </Grid2>
+        </Grid>
       ))}
-    </Grid2>
+    </Grid>
   );
 };
 
