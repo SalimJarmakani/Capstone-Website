@@ -28,8 +28,8 @@ const GroupMember = ({ name, role, imageUrl, linkedInUrl }) => {
       <Card
         sx={{
           padding: 2,
-          width: 150, // Fixed width for all cards
-          height: 300, // Fixed height for all cards
+          width: 250, // Fixed width for all cards
+          height: 500, // Fixed height for all cards
           margin: 1,
           display: "flex", // Flex layout
           flexDirection: "column", // Ensure vertical stacking
@@ -51,12 +51,12 @@ const GroupMember = ({ name, role, imageUrl, linkedInUrl }) => {
           style={{
             width: "50%", // Make the image full width of the card
             height: "50%", // Maintain aspect ratio
-            maxHeight: 200,
+            maxHeight: 300,
             minHeight: "50",
             objectFit: "cover",
             borderRadius: "16px", // Rounded corners
             marginBottom: "16px", // Space below the image,
-            minWidth: 50,
+            minWidth: 150,
           }}
         />
 

@@ -9,6 +9,7 @@ import {
   styled,
   createTheme,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 import Team from "./components/Team";
 
 const people = [
@@ -66,8 +67,12 @@ const HomePage = () => {
             >
               Solution Architects
             </Typography>
-            <Button color="inherit">Home</Button>
-            <Button color="inherit">Contact</Button>
+            <Button color="inherit" component={Link} to="/">
+              Home
+            </Button>
+            <Button color="inherit" component={Link} to="/contact">
+              Contact
+            </Button>
           </Toolbar>
         </AppBar>
       </ThemeProvider>
